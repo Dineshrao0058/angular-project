@@ -1,0 +1,42 @@
+
+    <div>
+       
+     <form action="">
+      <h2>LOGINFORM</h2> 
+    <label for="first-name">First Name: </label>
+    <input type="text" formControlName="fname">
+  
+    <label for="last-name">Last Name: </label>
+    <input type="text" formControlName="lname">
+
+    <label for="mobile">Mobile: </label>
+    <input type="text" formControlName="mobile">
+
+    <div class="w-30">
+      <div>
+    <label for="gender">Gender: </label>
+    </div>
+    <input type="radio" name="gender" formControlName="gender" value="male" id="flexRadioDefault1">
+    <label for="flexRadioDefault1">Male</label>
+    <input type="radio" name="gender" formControlName="gender" value="female" id="flexRadioDefault2">
+    <label for="flexRadioDefault2">Female</label>
+  </div>
+  <div> 
+    
+        <label for="first-name">Email id: </label>
+        <input type="text" formControlName="email">
+        </div>
+        <div>
+        <label for="last-name">Password: </label>
+        <input type="password" formControlName="psw"><br>
+        </div>
+        <div>
+        <label for="">Cnfm password: </label>
+        <input type="password" formControlName="cpsw"><br>
+      </div>
+        <div>
+        <button  type="button" class="btn btn-primary"(click)="submit()">Login</button>
+  </div>
+</form>
+</div>
+  

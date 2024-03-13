@@ -1,0 +1,30 @@
+
+<div class="topcontainer">
+    <div class="main">
+        <span class="border"></span>
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">SIGNUP</label><br> 
+                <input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName"><br><br>
+                <input type="email" name="email" placeholder="email"[(ngModel)]="signupObj.email"><br><br>
+                <input type="password" name="paswd" placeholder="password"[(ngModel)]="signupObj.password"><br><br>
+                <input type="password" name="paswd" placeholder="re-enter password"[(ngModel)]="signupObj.password"><br><br>
+                <button type="button" class="btn btn-primary"(click)="onSignup()"> Sign up</button>
+            </form><br><br>
+         </div>
+
+         <div>
+            <form>
+                 <label for="chk" aria-hidden="true">LOGIN</label><br> 
+                <input type="txt" name="userName" placeholder="user Name" [(ngModel)]="loginObj.userName"><br><br>
+                <input type="password" name="pasword" placeholder="password" [(ngModel)]="loginObj.password"><br><br>
+                <button  type="button" class="btn btn-primary"(click)="onLogin()">Login</button>
+            </form>
+         </div> 
+    </div>
+</div>
+
+
+
+
+

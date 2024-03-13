@@ -1,0 +1,27 @@
+<div class="container">
+<div class="row">
+<div class="search-hero">
+<input type="text" name="search" placeholder=" search by name" #name>
+<button (click)="search(name.value)"type="button" class="btn btn-primary">search</button>
+</div>
+<table class= "table table-bordered ">
+  <thead>
+    <tr>
+      <th scope=>Employeeid</th>         
+      <th scope=>EmployeeName</th>
+      <th scope=>emprole</th>
+      <th scope=>mobile</th>
+      <th scope=>Action</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let b of employee">
+      <td>{{b.Employeeid}}</td>
+      <td>{{b.EmployeeName}}</td>
+      <td>{{b.Emprole}}</td>
+      <td>{{b.Mobile}}</td>
+      <td>{{b.Action}}</td> 
+
+</tbody>           
+</table>
+</div>
+</div>

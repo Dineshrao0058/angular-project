@@ -1,0 +1,25 @@
+.card{
+    width:600px;
+    margin-left: 400px;
+
+
+}
+label{
+    font-weight: bold;
+    padding: 5px;
+}
+body{
+    width: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+h2{
+   text-align: center; 
+}
+.card{
+    background-color: lightblue;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}

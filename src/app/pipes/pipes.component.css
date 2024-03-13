@@ -1,0 +1,8 @@
+dl,dt,dd{
+    border: 2px solid rgb(85, 174, 185);
+    text-align: center;
+    width: 100%;
+}
+dl{
+    margin: auto;
+}

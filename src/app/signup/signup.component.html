@@ -1,0 +1,60 @@
+<div class="signup-form">
+        
+            <h2> SIGNUP FORM</h2>
+            <div class="d-flex">
+            <div>
+            <label for="fname">Full Name</label>
+            <input type="text"  class="form-control" formControlName="fname"
+                 [class.is-invalid]=""> 
+                 
+        </div>
+       
+        <div>
+            <label>Lastname:</label>
+            <input type="text" formControlName="lname" class="form-control">
+            
+        </div>
+    </div>
+            <div>
+          <label for="gender">Gender: </label>
+          </div>
+          <input type="radio" name="gender" formControlName="gender" value="male" id="flexRadioDefault1">
+          <label for="flexRadioDefault1">Male</label>
+          <input type="radio" name="gender" formControlName="gender" value="female" id="flexRadioDefault2">
+          <label for="flexRadioDefault2">Female</label>
+        </div>
+        <div>
+            <div>
+                <div class="d-flex">
+          <label for="role">Role: </label>
+          </div>
+          <input type="radio" name="role" formControlName="role" value="user" id="flexRadioDefault1">
+          <label for="flexRadioDefault1">User</label>
+          <input type="radio" name="role" formControlName="admin" value="admin" id="flexRadioDefault2">
+          <label for="flexRadioDefault2">Admin</label>
+        </div>
+        <div>
+            <label>Mobile:</label>
+            <input type="text" formControlName="mobile" class="form-control">
+            </div>
+        <div>
+            <label>Email</label>
+            <input type="text" formControlName="email" name="email" class="form-control" >
+           
+        </div>
+
+        <div>
+            <div class="d-flex">
+            <label>Password</label><br>
+            <input type="password" formControlName="password" name="password" class="form-control">
+            
+            </div>
+
+        <div>
+        
+            <label>Confirm Password</label>
+            <input type="password" formControlName="confirmPassword" name="confirmPassword" class="form-control">
+           
+           </div>
+
+

@@ -1,0 +1,85 @@
+<div class="register-form">
+    <form>
+        <div>
+            <h2> REGISTRATION FORM</h2>
+            <label for="fname">Full Name</label>
+            <input type="text"  class="form-control" formControlName="fname"
+                 [class.is-invalid]="form.controls.fname.invalid"> 
+                 <div>
+                    <small *ngIf="form.controls.fname.invalid && form.controls.fname.touched" class="text-danger">required field*</small>
+                </div>
+        </div>
+       
+        <div>
+            <div>
+            <label>Lastname:</label>
+            <input type="text" formControlName="lname" class="form-control">
+            <div>
+                <small *ngIf="form.controls.lname.invalid && form.controls.lname.touched" class="text-danger">required field*</small>
+            </div>
+        </div>
+        </div>
+        <div>
+            <label>Mobile:</label>
+            <input type="text" formControlName="mobile" class="form-control">
+            </div>
+        <div>
+            <label>Email</label>
+            <input type="text" formControlName="email" name="email" class="form-control" >
+            <div>
+                <small *ngIf="form.controls.email.invalid && form.controls. email.touched" class="text-danger">required field*</small>
+                
+            </div>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" formControlName="password" name="password" class="form-control">
+            <div>
+                <small *ngIf=" form.controls.password.invalid && form.controls. password.touched" class="text-danger">required field*</small>
+            </div>
+            </div>
+        
+        <div>
+            <label>Confirm Password</label>
+            <input type="password" formControlName="confirmPassword" name="confirmPassword" class="form-control">
+            <div>
+                <small *ngIf="form.controls.password.invalid && form.controls.password.touched" class="text-danger">required field*</small>
+            </div>
+
+
+            </div>
+        <div>
+            <label> Address: </label>
+            <input id="address" type="text" formControlName="Address">
+            <small *ngIf="form.controls.Address.invalid && form.controls.Address.touched" class="text-danger">required field*</small>
+          <br><br>
+    
+            <label for="street">Street: </label>
+    <input id="street" type="text" formControlName="Street">
+   <br><br>
+    <label for="city">City: </label>
+    <input id="city" type="text" formControlName="City">
+  <br><br>
+
+    <label for="state">State: </label>
+    <input id="state" type="text" formControlName="State">
+  <br><br>
+    <label for="zip">Pin Code: </label>
+    <input id="zip" type="text" formControlName="Zip">
+  </div> 
+  <div>
+    <input type="checkbox" formControlName="acceptTerms" class="form-check-input" checked="true">
+    <label class="form-check-label">I have read and agree to the Terms & Conditions</label>
+    
+</div> 
+
+
+        <div>
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Signup</button>
+            <button type="button" class="btn btn-warning float-right" (click)="reset()">Reset</button>
+               
+            
+        </div>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+p {
+    color:blueviolet;
+ }
+
+ .c1{
+    color:rgb(255, 0, 140);
+    font-size: 30px;
+
+ }
+ .c2{
+    color: rgb(214, 20, 172);
+    font-size: 30px;
+ }  
+ .p1{
+   color: orange;
+   font-size:25px;
+
+ }
+.p2{
+   background-color:blue;
+}
+.p3{
+   border: 2px solid rgba(16, 132, 136, 0.205);
+}

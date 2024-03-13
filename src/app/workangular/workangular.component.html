@@ -1,0 +1,33 @@
+<p>Data Bindings!</p>
+
+
+<div>
+   <span [style.color]="'rgb(214, 20, 172)'"[style.fontSize]="'20px'">STRING INTERPOLATION</span> <h2>{{sInterpolation}}...</h2>
+</div>
+ 
+<div>
+    Property Binding:: <input type="text" [value]="pBinding" >
+    <p> output::::::: {{pBinding}}</p>
+</div>
+
+
+<div>
+    Event binding: <input type="type" (input)="myFun($event)" #abc>
+    <p>output::::::: {{eBinding}}</p>
+</div>
+<div>
+    Two way binding: <input type="text" [(ngModel)]="result">
+    <p>output:::::::: {{result}}</p>
+</div>
+
+<div>
+    Style Binding case1:  <span [style]="{color:'rgb(0, 255, 106)',fontSize:'50px'}">Span </span>
+    Style Binding case2: <span [style.color]="'rgb(214, 20, 172)'"[style.fontSize]="'50px'">properName</span>
+</div>
+
+<div>
+   <p> Class Binding case 1 : <span [class]="2>5 ? 'c1': 'c2'"> 2>5 ? 'c1': 'c2'</span></p>
+   <p> Class Binding case 2 : <span [class.c1]="true"> C1 Class</span></p>
+   <p> Class Binding case 3 using array : <span [class]="['p1','p2','p3']"> Class Binding case3 using array</span></p> 
+</div>
+

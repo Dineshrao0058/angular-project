@@ -1,0 +1,19 @@
+.header-c {
+    height: 50px;
+    background-color: rgb(132, 148, 124);
+    width: 100%;
+}
+.sideNav {
+    width: 100%;
+    display: flex;
+    background-color: lightpink;
+    cursor: pointer;
+}
+.sideNav-links {
+    width: 20%;
+    background-color: rgb(201, 191, 211);
+}
+.sn-content {
+    width: 80%;
+    background-color: rgb(166, 221, 166);
+}

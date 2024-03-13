@@ -1,0 +1,75 @@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+            <th > student name</th>
+            <th > roll number</th>
+            <th > percent</th>
+            <th > class</th> 
+             
+            </tr> 
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students; index as i; first as f; last as l; odd as o; even as e"></tr>
+            
+            <tr *ngFor="let s of students">
+                <td>{{s.sname}}</td> 
+                <td>{{s.rNo}}</td>
+                <td>{{s.percent}}</td>
+                <td>{{s.class}}</td>
+                
+        </tbody>
+    </table>
+</div> 
+
+
+
+
+
+ <div>
+    <h1 class="text-center text blue">NgFor</h1>
+    <ul>
+        <li *ngFor="let vita  of mobiles">{{vita}}</li>
+    </ul>
+ </div>
+ 
+ <table class="table">
+    <tr>
+        <td>mobile</td>
+        <td>First</td>
+        <td>Last</td>
+        <td>index</td>
+        <td>Odd</td>
+        <td>Even</td>
+    </tr>
+    <tr *ngFor="let vita of mobiles; index as i;first as f; last as l; odd as o;even as e">
+        <td>{{vita}}</td>
+        <td>{{f}}</td>
+        <td>{{l}}</td>
+        <td>{{i}}</td>
+        <td>{{o}}</td>
+        <td>{{e}}</td>
+    </tr>
+ </table>
+  
+ 
+ 
+ 
+ 
+
+   <div>
+    <h1 class="text-center text red">NgIf</h1>
+    <h3 *ngIf="a1">*ngIf ="true"</h3>
+    <h3  *ngIf="!a1"> *ngIf ="false"</h3>
+</div>
+<hr>
+<div>
+    <h3 *ngIf="!a1 else aa"> *ngIf ="false"</h3>
+    <ng-template #aa>This is ng-Template </ng-template>
+</div>
+<div>
+    <h3 *ngIf="!a1 then bb1 else bb2"> </h3>
+    <ng-template #bb1>This is then ng-Template </ng-template>
+    <ng-template #bb2>This is else ng-Template </ng-template>
+</div> 
+  

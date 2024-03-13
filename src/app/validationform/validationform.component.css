@@ -1,0 +1,18 @@
+body{    
+    font-family: Calibri;    
+}    
+input[type="text"] {    
+    width:550px;
+}    
+
+form{    
+    text-align: left;    
+    font-family: Calibri;   
+    font-size: 15px;    
+    border: 2px solid rgb(19, 18, 18);    
+    width: 555px;    
+    margin: 15px auto;    
+}    
+.form-control{
+    width:80%;
+}
